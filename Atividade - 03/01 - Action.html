@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Action</title>
+    <style>
+        body {
+            width: 800px;
+            background-color: peachpuff;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        .atri {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>O que significa Atributo?</h1><br>
+        <h3>Em HTML, um atributo é uma característica de um elemento da página, como o tamanho da fonte ou a cor. Os
+            atributos são usados para amplificar uma tag. Quando um navegador da Web interpreta uma tag HTML, ele também
+            procura seus atributos para que possa exibir os elementos da página da Web corretamente.<br><br>
+            Os atributos fornecem informações adicionais sobre os elementos HTML. Por exemplo, os links HTML são
+            definidos por uma tag. O endereço do link é especificado no atributo "href". Note que os atributos HTML são
+            sempre incluídos entre aspas.<br><br>
+            Os atributos HTML têm algumas características chave:<br>
+            *Os atributos fornecem mais informações sobre os elementos HTML<br>
+            *Os atributos são sempre especificados na tag inicial<br>
+            *Os atributos são apresentados em pares nome/valor, tais como: name=value<br></h3><br>
+        <h1>Atributo Action</h1><br>
+        <h3>O atributo <i class="atri">action</i> define a ação a ser executada quando o formulário for enviado.<br>
+            Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão
+            enviar.<br>
+            No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado "action_page.php". Este
+            arquivo contém um script do lado do servidor que manipula os dados do formulário:<br></h3><br>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form><br>
+        <img src="./ActionAtributo.png" alt="ActionAtributo"><br><br>
+    </center>
+
+</body>
+
+</html>

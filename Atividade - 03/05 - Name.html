@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Name</title>
+    <style>
+        body {
+            width: 800px;
+            background-color: peachpuff;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        .atri {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Atributo Name</h1><br>
+        <h3>O atributo <i class="atri">name</i> especifica o nome de um formulário.<br>
+            O atributo <i class="atri">name</i> é usado para referenciar elementos em um JavaScript ou para referenciar
+            dados de formulário após o envio de um formulário.</h3><br>
+        <form action="/action_page.php" method="get" name="myForm">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="button" onclick="formSubmit()" value="Send form data!">
+        </form><br>
+        <img src="./AtributoName.png" alt="NameAtributo"><br><br>
+    </center>
+
+</body>
+
+</html>

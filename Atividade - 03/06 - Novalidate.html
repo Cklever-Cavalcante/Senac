@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Novalidate</title>
+    <style>
+        body {
+            width: 800px;
+            background-color: peachpuff;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        .atri {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Atributo Novalidate</h1><br>
+        <h3>O atributo <i class="atri">novalidate</i> é um atributo booleano.<br>
+            Quando presente, especifica que os dados do formulário (entrada) não devem ser validados quando enviados.
+        </h3><br>
+        <form action="/action_page.php" novalidate>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit">
+        </form><br>
+        <img src="./NovalidateAtributo.png" alt="NovalidateAtributo"><br><br>
+    </center>
+
+</body>
+
+</html>
