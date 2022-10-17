@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Method</title>
+    <style>
+        body {
+            width: 800px;
+            background-color: peachpuff;
+        }
+
+        h1,h2 {
+            color: blueviolet;
+        }
+
+        .atri {
+            color: red;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Atributo Method</h1><br>
+    <h3>O atributo <i class="atri">method</i> especifica o método HTTP a ser usado ao enviar os dados do formulário.<br>
+        Os dados do formulário podem ser enviados como variáveis ​​de URL <i class="atri">(com method="get")</i> ou como transação de postagem HTTP <i class="atri">(com method="post")</i>.</h3>
+        <br>
+        <h2>Método Get</h2><br>
+        <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form><br>
+          <img src="/Senac - Atividade - 03/MetodoGet.png" alt="MethodGet"><br>
+          <h3><i class="atri">Observações sobre GET:</i><br>
+            *Anexa os dados do formulário à URL, em pares nome/valor<br>
+            *NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado são visíveis na URL!)<br>
+            *O comprimento de um URL é limitado (2048 caracteres)<br>
+            *Útil para envios de formulários em que um usuário deseja marcar o resultado<br>
+            *GET é bom para dados não seguros, como strings de consulta no Google</h3><br>
+            <h2>Método Post</h2><br>
+            <form action="/action_page.php" method="post">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+              </form><br>
+              <img src="/Senac - Atividade - 03/MethodPost.png" alt="MethodPost"><br>
+              <h3><i class="atri">Observações sobre o POST:</i><br>*Anexa os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL)<br>
+                *O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.<br>
+                *Envios de formulários com POST não podem ser marcados</h3><br><br>
+</center>
+    
+</body>
+</html>
